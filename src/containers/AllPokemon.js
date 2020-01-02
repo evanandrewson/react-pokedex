@@ -20,10 +20,10 @@ const AllPokemon = ({ match }) => {
     <>
       <SearchForm match={match} />
       <PokemonList list={list} />
-      <Link to={+match.params.page < maxPage ? `/${+match.params.page + 1}` : `/${maxPage}`}>
+      <Link to={+match.params.page < maxPage ? `/${match.params.search}/${+match.params.page + 1}` : `/${match.params.search}/${maxPage}`}>
         <button>+</button>
       </Link>
-      <Link to={+match.params.page === 1 ? '/1' : `/${+match.params.page - 1}`}>
+      <Link to={+match.params.page === 1 ? `/${match.params.search}/1` : `/${match.params.search}/${+match.params.page - 1}`}>
         <button>-</button>
       </Link>
     </>

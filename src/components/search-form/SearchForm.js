@@ -7,7 +7,7 @@ const SearchForm = ({ match }) => {
   return (
     <form>
       <input type='text' placeholder='search' value={search} onChange={event => updateSearch(event.target.value)} />
-      <Link to={`/${search}/${match.params.page}`}>
+      <Link to={`/${search}/${match.params.page || 1}`}>
         <button>🔍</button>
       </Link>
     </form>
