@@ -7,3 +7,10 @@ export function getPokemon(page, search) {
   return fetch(url)
     .then(response => response.json());
 }
+
+export function getDetail(id) {
+  const url = `${URL}/${id}`;
+
+  return fetch(url)
+    .then(response => response.json());
+}

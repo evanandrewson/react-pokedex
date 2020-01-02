@@ -15,6 +15,7 @@ const PokemonList = ({ list }) => {
 
 PokemonList.propTypes = {
   list: PropTypes.arrayOf(PropTypes.shape({
+    _id: PropTypes.string.isRequired,
     pokemon: PropTypes.string.isRequired,
     url_image: PropTypes.string.isRequired,
     attack: PropTypes.number.isRequired,
