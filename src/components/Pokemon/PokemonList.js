@@ -17,8 +17,8 @@ PokemonList.propTypes = {
   list: PropTypes.arrayOf(PropTypes.shape({
     pokemon: PropTypes.string.isRequired,
     url_image: PropTypes.string.isRequired,
-    attack: PropTypes.string.isRequired,
-    defense: PropTypes.string.isRequired,
+    attack: PropTypes.number.isRequired,
+    defense: PropTypes.number.isRequired,
     type_1: PropTypes.string.isRequired
   })).isRequired
 };

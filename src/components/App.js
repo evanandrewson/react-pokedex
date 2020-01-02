@@ -7,7 +7,8 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path='/:page' component={AllPokemon}/>
+        <Route exact path='/' component={AllPokemon}/>
+        <Route path='/:search/:page' component={AllPokemon}/>
       </Switch>
     </Router>
   );

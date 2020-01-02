@@ -16,8 +16,8 @@ const PokemonItem = ({ pokemon, url_image, attack, defense, type_1 }) => {
 PokemonItem.propTypes = {
   pokemon: PropTypes.string.isRequired,
   url_image: PropTypes.string.isRequired,
-  attack: PropTypes.string.isRequired,
-  defense: PropTypes.string.isRequired,
+  attack: PropTypes.number.isRequired,
+  defense: PropTypes.number.isRequired,
   type_1: PropTypes.string.isRequired
 };
 
